@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
+  "name": "dan-portfolio",
+  "description": "My portfolio",
+  "version": "1.0.0",
+  "author": "Daniel Farrell",
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.1.34",
@@ -30,18 +30,11 @@
     "react-helmet": "^5.2.0",
     "uuid": "^3.2.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
-    "clean": "rimraf .cache public",
+    "clean": "gatsby clean",
     "start:app": "npm run develop",
-    "start:lambda": "netlify-lambda serve src/lambda",
     "start": "run-p start:**",
     "build:app": "npm run clean && gatsby build",
-    "build:lambda": "netlify-lambda build src/lambda",
     "build": "run-p build:**",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
@@ -50,7 +43,6 @@
   },
   "devDependencies": {
     "http-proxy-middleware": "^0.19.1",
-    "netlify-lambda": "^1.4.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.15.3",
     "rimraf": "^2.6.2"
