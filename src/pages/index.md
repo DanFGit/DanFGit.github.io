@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Daniel Farrell
 image: /img/hero.jpg
-heading: Daniel Farrell
+heading: Test
 subheading: Web UI/UX Design & Development
 mainpitch:
   title: Why Kaldi
