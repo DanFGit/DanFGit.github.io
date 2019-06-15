@@ -101,3 +101,6 @@ collections:
               - label: "Location"
                 name: "location"
                 widget: "string"
+          - label: "Header Image"
+            name: "header"
+            widget: "image"
