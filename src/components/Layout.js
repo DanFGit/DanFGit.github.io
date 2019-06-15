@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import useSiteMetadata from '../hooks/useSiteMetadata'
+
+import Header from './Header'
+import useSiteMetadata from './hooks/useSiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -41,6 +43,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
+      <Header />
       <div>{children}</div>
     </div>
   )
