@@ -2,6 +2,7 @@ settingsKey: general
 title: JW Autos
 subtitle: used car sales
 contact:
-  phone: 01942 231217
   email: jwmotors@live.co.uk
   location: Wigan
+  phone: 01942 231217
+header: /img/bg.jpeg
