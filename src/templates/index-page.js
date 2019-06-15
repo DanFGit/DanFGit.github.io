@@ -2,12 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-export const IndexPageTemplate = ({
-  image,
-  heading,
-  subheading,
-  blurbs,
-}) => (
+export const IndexPageTemplate = ({ image, heading, subheading, blurbs }) => (
   <div>
     <p>Hello</p>
   </div>

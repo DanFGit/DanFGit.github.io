@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import './all.sass'
-import useSiteMetadata from './SiteMetadata'
+import useSiteMetadata from '../hooks/useSiteMetadata'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
