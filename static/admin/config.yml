@@ -67,3 +67,37 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+
+  - name: "settings"
+    label: "Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Site Settings"
+        file: "src/config/site.yml"
+        fields:
+          - label: "Settings Key"
+            name: "settingsKey"
+            widget: "hidden"
+            default: "general"
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "string"
+          - label: "Contact Details"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Phone Number"
+                name: "phone"
+                widget: "string"
+              - label: "Email Address"
+                name: "email"
+                widget: "string"
+              - label: "Location"
+                name: "location"
+                widget: "string"

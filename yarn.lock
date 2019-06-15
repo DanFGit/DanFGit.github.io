@@ -5912,6 +5912,16 @@ gatsby-transformer-sharp@^2.1.9:
     probe-image-size "^4.0.0"
     sharp "^0.21.3"
 
+gatsby-transformer-yaml@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.1.12.tgz#2d1ee6ed6f399315d76caaa53888b02d2049bf31"
+  integrity sha512-KkRKb3ysNwYwBRE0kUA17gLHA5bg6NOmjf8OeSeHhNkJJrn8DQkRhqd8aGCXgfg5m7AeN7XU/5MGtF4uDXVM0A==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    js-yaml "^3.13.0"
+    lodash "^4.17.10"
+    unist-util-select "^1.5.0"
+
 gatsby@^2.1.34:
   version "2.3.12"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.12.tgz#22f1eda449723b4afb3c12ca379fa17d9b19e300"
