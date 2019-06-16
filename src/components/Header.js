@@ -11,13 +11,7 @@ const SITE_SETTINGS_QUERY = graphql`
         email
         location
       }
-      header {
-        childImageSharp {
-          fluid(maxWidth: 2048, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+      header
     }
   }
 `
