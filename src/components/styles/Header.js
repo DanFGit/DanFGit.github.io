@@ -5,7 +5,7 @@ export const Jumbotron = styled.header`
   color: white;
   text-shadow: 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1.2em;
-  background: ${props => `url(${props.background})` };
+  background: ${props => `url(${props.background})`};
   background-size: cover;
 `
 
