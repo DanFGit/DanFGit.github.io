@@ -6,14 +6,7 @@ const IndexPagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
-    return (
-      <IndexPageTemplate
-        image={data.image}
-        heading={data.heading}
-        subheading={data.subheading}
-        blurbs={data.blurbs || []}
-      />
-    )
+    return <IndexPageTemplate intros={data.intros || []} />
   } else {
     return <div>Loading...</div>
   }
@@ -23,7 +16,6 @@ IndexPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
-  getAsset: PropTypes.func,
 }
 
 export default IndexPagePreview

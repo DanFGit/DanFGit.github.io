@@ -3,31 +3,24 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Intros from '../components/Intros'
 
-export const IndexPageTemplate = ({ image, heading, subheading, blurbs }) => (
+export const IndexPageTemplate = ({ intros }) => (
   <Layout>
-    <p>Hello</p>
+    <main>
+      <Intros intros={intros} />
+    </main>
   </Layout>
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  blurbs: PropTypes.array,
+  intros: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
-  return (
-    <IndexPageTemplate
-      image={frontmatter.image}
-      heading={frontmatter.heading}
-      subheading={frontmatter.subheading}
-      blurbs={frontmatter.blurbs}
-    />
-  )
+  return <IndexPageTemplate intros={frontmatter.intros} />
 }
 
 IndexPage.propTypes = {
@@ -44,18 +37,8 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-        blurbs {
-          heading
-          body
+        intros {
+          message
         }
       }
     }

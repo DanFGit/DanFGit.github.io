@@ -13,11 +13,18 @@ collections:
         label: "Home Page"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Blurbs, name: blurbs, widget: list, fields: [{label: Heading, name: heading, widget: text}, {label: Body, name: body, widget: text}]}
+          - label: "Template Key"
+            name: "templateKey"
+            widget: "hidden"
+            default: "index-page"
+          - label: "Intro Messages"
+            name: "intros"
+            widget: "list"
+            allow_add: false
+            fields:
+              - label: "Message"
+                name: "message"
+                widget: "text"
 
   - name: "settings"
     label: "Settings"
