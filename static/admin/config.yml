@@ -21,10 +21,10 @@ collections:
             name: "intros"
             widget: "list"
             allow_add: false
-            fields:
-              - label: "Message"
-                name: "message"
-                widget: "text"
+            field:
+              label: "Message"
+              name: "message"
+              widget: "text"
 
   - name: "settings"
     label: "Settings"
